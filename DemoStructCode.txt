@@ -1,0 +1,27 @@
+using System;
+
+class Program {
+    
+    public struct Student {
+        public string studentName;
+        public int studentId_num;
+        
+        public void setValues(string newStudentName, int newStudentId_num) {
+            this.studentName = newStudentName;
+            this.studentId_num = newStudentId_num;
+        }
+        
+        public void displayValues() {
+            Console.WriteLine("Student Name: " + this.studentName);
+            Console.WriteLine("Student ID: " + this.studentId_num);
+        }
+    }
+    
+    static void Main() {
+        Student info = new Student();
+        info.setValues("Avie", 2004577507);
+        
+        Console.WriteLine("Student Info");
+        info.displayValues();
+    }
+}
